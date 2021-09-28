@@ -1,0 +1,20 @@
+***************************************************************
+encrypt text method's Ceasar: Wkh shq lv pljkwlhu wkdq wkh vzrug!
+decrypt text method's Ceasar: The pen is mightier than the sword!
+
+encrypt text method's Affine: Kar yrs dh pdxakdre kafs kar htveo!
+decrypt text method's Affine: The pen is mightier than the sword!
+
+encrypt text method's Vigener: Avp bif pg xukzawpd xzhb eti kdccp!
+decrypt text method's Vigener: The pen is mightier than the sword!
+
+encrypt text method's Playfair: Dlb qaq lp hkamolgc dlhv dlf qobdo!
+decrypt text method's Playfiar: The pen is mightier than the sword!
+
+encrypt text method's Polybiy: Ynk uks ox romnyokw ynfs ynk xbtwi!
+decrypt text method's Polybiy: The pen is mightier than the sword!
+
+encrypt text method's Hilla: Ttj cdu ii uotgwxpk ttna tts oakzt!
+decrypt text method's Hilla: The pen is mightier than the sword!
+
+***************************************************************
