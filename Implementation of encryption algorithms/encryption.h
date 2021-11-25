@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <string> 
 using namespace std;
@@ -8,15 +8,15 @@ using namespace std;
 class ceasar
 {
 private:
-	int key; //ключ шифрования.
+	int key; //РєР»СЋС‡ С€РёС„СЂРѕРІР°РЅРёСЏ.
 public:
-	ceasar(const int m_key = 3);     //конструктор
+	ceasar(const int m_key = 3);     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~ceasar() {}     //деструктор
+	~ceasar() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -25,15 +25,15 @@ public:
 class affine
 {
 private:
-	int key_a, key_b; //ключ шифрования. ключ а - взаимно простое с 26 число (26-количество букв в алфавите).
+	int key_a, key_b; //РєР»СЋС‡ С€РёС„СЂРѕРІР°РЅРёСЏ. РєР»СЋС‡ Р° - РІР·Р°РёРјРЅРѕ РїСЂРѕСЃС‚РѕРµ СЃ 26 С‡РёСЃР»Рѕ (26-РєРѕР»РёС‡РµСЃС‚РІРѕ Р±СѓРєРІ РІ Р°Р»С„Р°РІРёС‚Рµ).
 public:
-	affine(const int key_one = 3, const int key_two = 5);     //конструктор
+	affine(const int key_one = 3, const int key_two = 5);     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~affine() {}     //деструктор
+	~affine() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -44,13 +44,13 @@ class vigener
 private:
 	string key_word;
 public:
-	vigener(const string& key = "Holmes!");     //конструктор
+	vigener(const string& key = "Holmes!");     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~vigener() {}     //деструктор
+	~vigener() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,17 +60,17 @@ public:
 class playfair
 {
 private:
-	//ключ должен быть только из английских строчных букв.
+	//РєР»СЋС‡ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С‚РѕР»СЊРєРѕ РёР· Р°РЅРіР»РёР№СЃРєРёС… СЃС‚СЂРѕС‡РЅС‹С… Р±СѓРєРІ.
 	string key_max_word;
-	bool without_meaning = false;//служит индикатором наличия пустышки на конце слова.
+	bool without_meaning = false;//СЃР»СѓР¶РёС‚ РёРЅРґРёРєР°С‚РѕСЂРѕРј РЅР°Р»РёС‡РёСЏ РїСѓСЃС‚С‹С€РєРё РЅР° РєРѕРЅС†Рµ СЃР»РѕРІР°.
 public:
-	playfair(const string& key = "D !o?:?ct!or!");     //конструктор
+	playfair(const string& key = "D !o?:?ct!or!");     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~playfair() {}     //деструктор
+	~playfair() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -79,17 +79,17 @@ public:
 class polybius
 {
 private:
-	//матрица для английского языка 5x5.
+	//РјР°С‚СЂРёС†Р° РґР»СЏ Р°РЅРіР»РёР№СЃРєРѕРіРѕ СЏР·С‹РєР° 5x5.
 	char english_matrix[5][5];
 
 public:
-	polybius();     //конструктор
+	polybius();     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~polybius() {}     //деструктор
+	~polybius() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -98,16 +98,16 @@ public:
 class hilla
 {
 private:
-	int key_matrix[2][2]; //матрица ключ - размера 2x2.
-	bool without_meaning = false;//служит индикатором наличия пустышки на конце слова.
+	int key_matrix[2][2]; //РјР°С‚СЂРёС†Р° РєР»СЋС‡ - СЂР°Р·РјРµСЂР° 2x2.
+	bool without_meaning = false;//СЃР»СѓР¶РёС‚ РёРЅРґРёРєР°С‚РѕСЂРѕРј РЅР°Р»РёС‡РёСЏ РїСѓСЃС‚С‹С€РєРё РЅР° РєРѕРЅС†Рµ СЃР»РѕРІР°.
 
 public:
-	hilla();     //конструктор
+	hilla();     //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 
-	string encrypt(const string& message); //шифрует
+	string encrypt(const string& message); //С€РёС„СЂСѓРµС‚
 
-	string decrypt(const string& message); //дешифрует
+	string decrypt(const string& message); //РґРµС€РёС„СЂСѓРµС‚
 
-	~hilla() {}     //деструктор
+	~hilla() {}     //РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
